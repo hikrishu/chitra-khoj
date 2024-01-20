@@ -1,0 +1,115 @@
+:root {
+    --clr-light: rgb(235, 229, 229);
+    --clr-dark: rgb(40, 40, 100);
+    ---clr-primary: rgb(255, 106, 0);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+.page {
+    width: 100%;
+    min-height: 100vh;
+    text-align: center;
+    padding-top: 5rem;
+    position: relative;
+    background-color: var(--clr-dark);
+}
+.page h1 {
+    color: var(--clr-light);
+    font-size: 4rem;
+    font-weight: 800;
+    word-spacing: 0.3em;
+    text-transform: uppercase;
+    margin-bottom: -0.2em;
+    
+}
+.page span {
+    font-family: cursive;
+    color: var(--clr-light);
+ 
+    
+}
+.search-form {
+    margin: 15vh auto 10vh;
+    height: 7vh;
+    width: 40vw;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    
+    overflow: hidden;
+}
+.search-field {
+    flex: 1;
+    border: none;
+    outline: none;
+    background-color: rgba(205, 205, 228, 0.148);
+    padding-inline:30px;
+    color: var(--clr-light);
+    font-size: 1.1rem;
+
+    
+}
+::placeholder {
+    color: var(--clr-light);
+    font-size: 1.1rem;
+    justify-self: center;
+    
+   
+}
+.search-form button {
+    width: 10vw;
+    background-color: var(---clr-primary);
+    color: var(--clr-light);
+    font-weight: 600;
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+}
+
+.search-result {
+    width: 80%;
+    margin: 100px auto 50px;
+    padding-bottom: 120px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+}
+.search-result img {
+    width: 100%;
+    height: 230px;
+    border-radius: 7px;
+    object-fit: cover;
+    box-shadow: 1px 3px 15px rgb(13, 13, 13);
+}
+
+.show-more-btn {
+    height: 5vh;
+    width: 8vw;
+    background-color: var(---clr-primary);
+    color: var(--clr-light);
+    font-weight: 600;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    display: none;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.page h5 {
+    position: absolute;
+    bottom: 50px;
+    left: 100px;
+    color: var(--clr-light);
+    font-weight: 600;
+}
